@@ -1,5 +1,5 @@
-from ezdir import up, find, filepath
+import ezdir
 
-print(filepath())
-up(1)               # Go up two levels
-find("GitProjects")     # Change to a parent folder named 'scripts'
+ezdir.parent()
+ezdir.up(1) # Change current working directory to one level up
+ezdir.find("GitProjects") # Change current working directory to a parent folder named 'GitProjects'

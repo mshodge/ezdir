@@ -32,7 +32,6 @@ def parent():
     filename = frame.f_globals.get('__file__', None)
     if filename:
         return os.path.dirname(filename)
-    
 
 def up(levels=1):
     """
@@ -78,8 +77,7 @@ def find(folder_name):
             logger.info(f"Changed to {path}")
             return path
 
-        parent = os.path.dirname(path)
-        if parent == path:
+        parent_path = os.path.dirname(path)  # Renamed to avoid conflict
+        if parent_path == path:
             raise FileNotFoundError(f"Folder '{folder_name}' not found.")
-        path = parent
-        
+        path = parent_path
