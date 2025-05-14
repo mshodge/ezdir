@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ezdir',
-    version="0.2.0",  # Version of the package
+    version="0.3.0",  # Version of the package
     packages=find_packages(),
     description='Change working directory up a number of levels or to a named folder',
     long_description=open("README.md").read(),  # Long description from the README file

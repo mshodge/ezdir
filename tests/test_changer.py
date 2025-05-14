@@ -1,6 +1,6 @@
 import unittest
 import os
-from ezdir import up, find
+from ezdir import up, goto
 
 class TestChanger(unittest.TestCase):
     def test_up(self):
@@ -11,7 +11,7 @@ class TestChanger(unittest.TestCase):
 
     def test_find_not_found(self):
         with self.assertRaises(FileNotFoundError):
-            find("folder_that_does_not_exist")
+            goto("folder_that_does_not_exist")
 
 if __name__ == "__main__":
     unittest.main()

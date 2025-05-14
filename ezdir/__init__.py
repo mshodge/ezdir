@@ -1,4 +1,4 @@
-from .changer import up, find, parent
+from .changer import up, find, goto, parent
 from ._version import __version__
 
-__all__ = ['up', 'find', 'parent']
+__all__ = ['up', 'find', 'goto', 'parent']
